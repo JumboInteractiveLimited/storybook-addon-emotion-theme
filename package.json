@@ -1,7 +1,7 @@
 {
-  "name": "storybook-addon-styled-component-theme",
-  "version": "1.1.0",
-  "description": "storybook addon with styled-components theme",
+  "name": "storybook-addon-emotion-theme",
+  "version": "1.0.0",
+  "description": "storybook addon with emotion theme",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
@@ -12,7 +12,15 @@
     "test": "rimraf dist && jest",
     "prepare": "npm run build"
   },
-  "author": "carlos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JumboInteractiveLimited/storybook-addon-emotion-theme.git"
+  },
+  "author": "Patrick Gordon <pgord1@gmail.com> (http://patrick-gordon.com/)",
+  "bugs": {
+    "url": "https://github.com/JumboInteractiveLimited/storybook-addon-emotion-theme/issues"
+  },
+  "homepage": "https://github.com/JumboInteractiveLimited/storybook-addon-emotion-theme#readme",
   "license": "MIT",
   "dependencies": {
     "immutable": "^3.8.2",
@@ -38,19 +46,21 @@
     "react-dom": "^16.5.0",
     "rimraf": "^2.6.2",
     "sinon": "^6.2.0",
-    "styled-components": "4.0.0",
+    "emotion": "9.2.12",
+    "react-emotion": "9.2.12",
+    "emotion-theming": "9.2.9",
     "ts-jest": "^23.1.4",
     "tslint": "^5.11.0",
     "typescript": "^2.9.2"
   },
   "peerDependencies": {
-    "@storybook/addons": "^3.4.8",
+    "@storybook/addons": "4.0.12",
     "react": "^16.3.0",
-    "styled-components": "^3.3.2"
+    "emotion-theming": "9.2.9"
   },
   "keywords": [
     "storybook",
-    "styled-component",
+    "emotion",
     "addon",
     "theme",
     "react",

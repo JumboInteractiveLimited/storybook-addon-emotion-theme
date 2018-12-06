@@ -1,7 +1,7 @@
 import * as React from "react";
-import styled from "styled-components";
+import styled from "react-emotion";
 
-const Content = styled.div`
+const Content = styled("div")`
   width: 200px;
   line-height: 200px;
   text-align: center;

@@ -1,31 +1,21 @@
-[![npm version](https://badge.fury.io/js/storybook-addon-styled-component-theme.svg)](https://badge.fury.io/js/storybook-addon-styled-component-theme)
-[![build status](https://travis-ci.org/echoulen/storybook-addon-styled-component-theme.svg?branch=master)](https://travis-ci.org/echoulen/storybook-addon-styled-component-theme)
-
-
-![](https://media.giphy.com/media/FfFvOA9C0h9bhfCuNX/giphy.gif)
-
-#### Notice
-After v1.1.0 required storybook 4+
-
+#### Please note:
+Currently only tested with emotion v9.
 
 #### Installation
 ```bash
-yarn add storybook-addon-styled-component-theme --dev
+yarn add storybook-addon-emotion-theme --dev
 ```
 
-
-#### Add to .storybook/addons.js 
+#### Add to .storybook/addons.js
 
 ```javascript
-import 'storybook-addon-styled-component-theme/dist/src/register'; // v1.1.0^
-
-import 'storybook-addon-styled-component-theme/dist/register'; // v1.0.7
+import 'storybook-addon-emotion-theme/dist/src/register';
 ```
 
 #### addDecorator to .storybook/config.js
 ```javascript
 import {addDecorator} from '@storybook/react';
-import {withThemesProvider} from 'storybook-addon-styled-component-theme';
+import {withThemesProvider} from 'storybook-addon-emotion-theme';
 
 const themes = [theme1, theme2];
 addDecorator(withThemesProvider(themes));
@@ -33,10 +23,10 @@ addDecorator(withThemesProvider(themes));
 
 > or
 
-#### addDecorator to stories 
+#### addDecorator to stories
 
 ```javascript
-import {withThemesProvider} from 'storybook-addon-styled-component-theme';
+import {withThemesProvider} from 'storybook-addon-emotion-theme';
 
 const themes = [theme1, theme2];
 
@@ -57,3 +47,5 @@ Make sure every theme with `name` property
 
 `yarn example`
 
+#### Thanks
+Thanks to [Carlos](https://github.com/echoulen) for making [storybook-addon-styled-component-theme](https://github.com/echoulen/storybook-addon-styled-component-theme) upon which this library was based on top of.
