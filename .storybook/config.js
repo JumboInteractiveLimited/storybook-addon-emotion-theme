@@ -1,6 +1,6 @@
-import {addDecorator, configure} from '@storybook/react';
 import * as React from "react";
-import {withThemesProvider} from "../dist/src/index";
+import { addDecorator, configure } from '@storybook/react';
+import { withThemesProvider } from "../dist/index";
 
 const defaultTheme = {
   name: "DEFAULT",

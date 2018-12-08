@@ -14,8 +14,8 @@ import 'storybook-addon-emotion-theme/dist/src/register';
 
 #### addDecorator to .storybook/config.js
 ```javascript
-import {addDecorator} from '@storybook/react';
-import {withThemesProvider} from 'storybook-addon-emotion-theme';
+import { addDecorator } from '@storybook/react';
+import { withThemesProvider } from 'storybook-addon-emotion-theme';
 
 const themes = [theme1, theme2];
 addDecorator(withThemesProvider(themes));
@@ -35,8 +35,8 @@ storiesOf("demo", module)
   .add("demo div", () => <div>DEMO</div>);
 ```
 
-#### Remind
-Make sure every theme with `name` property
+#### Reminder
+Make sure every theme has a `name` property
 
 
 #### Contributing
