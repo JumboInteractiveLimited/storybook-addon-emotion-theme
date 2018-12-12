@@ -16,11 +16,12 @@ const darkTheme = {
   borderRadius: "100px",
 };
 
-export const getAllThemes = () => {
-  return [defaultTheme, darkTheme];
-};
+const themes = [defaultTheme, darkTheme];
+const demoCallback = (theme) => {
+  console.log("callback triggered with:", theme);
+}
 
-addDecorator(withThemesProvider(getAllThemes()));
+addDecorator(withThemesProvider(themes, demoCallback));
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../', true, /.stories.tsx/);
