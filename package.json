@@ -1,9 +1,9 @@
 {
   "name": "storybook-addon-emotion-theme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "storybook addon with emotion theme",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "example": "start-storybook -p 6006",
     "clean": "rimraf dist",
