@@ -1,6 +1,3 @@
-#### Please note:
-Currently only tested with emotion v9.
-
 #### Installation
 ```bash
 yarn add storybook-addon-emotion-theme --dev
@@ -9,7 +6,7 @@ yarn add storybook-addon-emotion-theme --dev
 #### Add to .storybook/addons.js
 
 ```javascript
-import 'storybook-addon-emotion-theme/dist/src/register';
+import 'storybook-addon-emotion-theme/dist/register';
 ```
 
 #### addDecorator to .storybook/config.js
@@ -36,7 +33,16 @@ storiesOf("demo", module)
 ```
 
 #### Reminder
-Make sure every theme has a `name` property
+Make sure every theme has a `name` property. For example:
+
+```
+const myTheme = {
+  name: "Light",
+  primaryColor: "blue"
+}
+```
+
+This is used for displaying in the Storybook UI.
 
 
 #### Contributing
