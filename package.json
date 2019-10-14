@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-emotion-theme",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "storybook addon with emotion theme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/JumboInteractiveLimited/storybook-addon-emotion-theme.git"
   },
-  "author": "Patrick Gordon <pgord1@gmail.com> (http://patrick-gordon.com/)",
+  "author": "Patrick Gordon <pgord1@gmail.com> (https://patrick-gordon.com/)",
   "bugs": {
     "url": "https://github.com/JumboInteractiveLimited/storybook-addon-emotion-theme/issues"
   },
