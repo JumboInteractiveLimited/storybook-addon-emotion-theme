@@ -9,6 +9,7 @@ import { Theme } from "./types/Theme";
 export interface ThemesProviderProps {
     themes: List<Theme>;
     cb?: (theme: Theme) => void;
+    CustomThemeProvider?: React.ComponentType<{ theme: Theme }>;
 }
 
 interface ThemesProviderState {
@@ -21,10 +22,10 @@ interface ThemesProviderHandler {
 
 type BaseComponentProps = ThemesProviderProps & ThemesProviderState & ThemesProviderHandler;
 
-const BaseComponent: React.SFC<BaseComponentProps> = ({ theme, children }) => (
-    <ThemeProvider theme={theme}>
+const BaseComponent: React.SFC<BaseComponentProps> = ({ theme, children, CustomThemeProvider = ThemeProvider }) => (
+    <CustomThemeProvider theme={theme}>
         {children}
-    </ThemeProvider>
+    </CustomThemeProvider>
 );
 
 export const ThemesProvider = compose<BaseComponentProps, ThemesProviderProps>(
