@@ -28,7 +28,11 @@ const BaseComponent: React.SFC<BaseComponentProps> = ({ onSelectTheme, themes, t
     <div style={RowStyle}>
         {themes.map((th, i) => {
             const buttonStyle = th === theme ? SelectedButtonStyle : ButtonStyle;
-            return <div style={buttonStyle} key={i} onClick={() => onSelectTheme(th)}>{th.name}</div>;
+            return (
+                <div style={{ ...buttonStyle, backgroundColor: th.primaryColor || '#FFF' }} key={i} onClick={() => onSelectTheme(th)}>
+                   {th.name}
+                </div>
+            );
         }).toArray()}
     </div>
 );
