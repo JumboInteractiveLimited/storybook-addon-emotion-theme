@@ -64,6 +64,12 @@
     "addon",
     "theme",
     "react",
-    "typescript"
-  ]
+    "typescript",
+    "storybook-addon",
+    "style"
+  ],
+  "storybook": {
+    "icon": "https://pbs.twimg.com/profile_images/1090383376731652096/fWr8fHp1_400x400.jpg",
+    "displayName": "Emotion theme"
+  }
 }
