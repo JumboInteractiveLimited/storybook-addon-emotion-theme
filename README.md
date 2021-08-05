@@ -1,3 +1,6 @@
+### This package has become deprecated
+> This package is no longer being maintained and has stopped active development.
+
 #### Installation
 ```bash
 yarn add storybook-addon-emotion-theme --dev
