@@ -76,8 +76,10 @@ const RowStyle: React.CSSProperties = {
 };
 
 const ButtonStyle: React.CSSProperties = {
-    border: "1px solid #BBB",
+    borderColor: "#BBB",
+    borderWidth: "1px",
     borderRadius: "6px",
+    borderStyle:  "solid",
     color: "#BBB",
     padding: "13px",
     marginRight: "15px",
